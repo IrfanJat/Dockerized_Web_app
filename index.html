@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📚 Library Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="navbar">
+    <h2>📚 Library Manager</h2>
+  </div>
+
+  <div class="container">
+    <div class="form-section">
+      <input type="text" id="bookTitle" placeholder="Book Title" />
+      <input type="text" id="bookAuthor" placeholder="Author" />
+      <input type="number" id="bookYear" placeholder="Year" />
+      <button id="addBookBtn">➕ Add Book</button>
+    </div>
+
+    <div class="filter-section">
+      <input type="text" id="searchInput" placeholder="🔍 Search books..." />
+      <select id="filterYear">
+        <option value="">Filter by Year</option>
+      </select>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>📖 Title</th>
+            <th>👨‍💼 Author</th>
+            <th>📅 Year</th>
+            <th>⚙️ Action</th>
+          </tr>
+        </thead>
+        <tbody id="bookList"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer>Developed by Irfan 🚀 | Built with HTML • CSS • JS • Docker</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
